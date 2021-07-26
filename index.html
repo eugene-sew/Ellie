@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Be happy! Hope your special day brings"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/android-chrome-512x512.png"
+    />
+    <title>Happy Birthday || Elita</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="card"
+        onload="  confetti({
+        particleCount: 100,
+        startVelocity: 30,
+        spread: 360,
+        origin: { x: Math.random(), y: Math.random() - 0.2 },
+      })"
+      >
+        <div class="content">
+          <h2>20</h2>
+          <h3>
+            Happy Birthday,<br />
+            Ellie
+          </h3>
+
+          <p>
+            Be happy! Hope your special day brings you all that your heart
+            desires ! Here's wishing you a day full of pleasant suprises !
+          </p>
+          <button
+            onclick="  confetti({
+            particleCount: 100,
+            startVelocity: 30,
+            spread: 360,
+          
+          })"
+          >
+            Happy Birthday
+          </button>
+
+          <img src="./Sponge/pngegg.png" class="sponge" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        glare: 1,
+      });
+    </script>
+
+    <script src="./confetti.browser.min.js"></script>
+  </body>
+</html>
